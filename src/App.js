@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
-
+import fondoDB from "./assets/fondoDB.jpg";
+import goku from "./assets/goku.png";
+import fondoDB2 from "./assets/fondoDB2.jpg";
+import vegetta from "./assets/vegetta.png";
+import fondoTF from "./assets/fondoTF.jpg";
+import bumblebee from "./assets/bumblebee.png";
+import { Card } from "./components/Card";
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="container">
+            <Card backgroundImg={fondoDB} frontImg={goku} />
+            <Card backgroundImg={fondoDB2} frontImg={vegetta} />
+            <Card backgroundImg={fondoTF} frontImg={bumblebee} />
+        </div>
+    );
 }
 
 export default App;
